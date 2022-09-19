@@ -5,7 +5,7 @@ const MAX_POWER = 30;
 let energiaSuperman = 100;
 let energiaGoku = 100;
 
-
+alert("bienvenido al combate")
 console.log(energiaSuperman)
 console.log(energiaGoku)
 
@@ -20,8 +20,6 @@ switch(inicio.toLowerCase()){
         case "inicio": 
             console.log("Tipeo: " + inicio);
                   
-    
-    
 while (energiaGoku > 0 && energiaSuperman > 0){
     round = round + 1
 
@@ -54,6 +52,8 @@ console.log("Energia Goku " + energiaGoku)
 default: 
 console.log("RESULTADO COMBATE:");
 }
+} else if (inicio == null) {
+    alert("PARA COMENZAR JUEGO DEBE TIPEAR INICIO");
 }
 
 if(energiaGoku === energiaSuperman){
